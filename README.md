@@ -4,6 +4,7 @@ Add [CSS Module](https://github.com/css-modules/css-modules) loaders to your [cr
 
 CSS Module styles can be written in CSS (including PostCSS)
 Unlike codebandits/react-app-rewire-css-modules this fork does NOT contain any SASS. Enough problems with the node-sass lib already.
+Also uses `[path][name]__[local]` instead of `'[local]___[hash:base64:5]`
 
 ## Installation
 
