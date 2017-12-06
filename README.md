@@ -2,8 +2,8 @@
 
 Add [CSS Module](https://github.com/css-modules/css-modules) loaders to your [create-react-app](https://github.com/facebookincubator/create-react-app) via [react-app-rewired](https://github.com/timarney/react-app-rewired).
 
-CSS Module styles can be written in CSS (including CSSNext)
-Unlike codebandits/react-app-rewire-css-modules this fork does NOT contain any SASS. Enough problems with the node-sass lib already.
+CSS Module styles can be written in CSS (including [CSSNext](http://cssnext.io/))
+Unlike [codebandits/react-app-rewire-css-modules](https://github.com/codebandits/react-app-rewire-css-modules) this fork does NOT contain any SASS. Enough problems with the node-sass lib already.
 Also uses `[path][name]__[local]` instead of `'[local]___[hash:base64:5]`
 
 ## Installation
