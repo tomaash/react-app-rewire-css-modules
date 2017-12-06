@@ -50,7 +50,7 @@ module.exports = function override(config, env) {
 In your React application:
 
 ```css
-// src/App.module.css
+/* src/App.module.css */
 
 .app {
   color: aqua;
