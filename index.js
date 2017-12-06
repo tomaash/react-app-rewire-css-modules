@@ -39,7 +39,7 @@ module.exports = function (config, env) {
     cssRule.exclude = /\.module\.css$/
 
     const cssModulesRuleCssLoader = findRule(cssModulesRule, cssLoaderMatcher)
-    cssModulesRuleCssLoader.options = Object.assign({modules: true, localIdentName: '[local]___[hash:base64:5]'}, cssModulesRuleCssLoader.options)
+    cssModulesRuleCssLoader.options = Object.assign({modules: true, localIdentName: '[path][name]__[local]'}, cssModulesRuleCssLoader.options)
     addBeforeRule(config.module.rules, fileLoaderMatcher, cssModulesRule)
 
     sassRule.test = /\.s[ac]ss$/
