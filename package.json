@@ -6,14 +6,15 @@
     "test": "jest"
   },
   "devDependencies": {
-    "jest": "^21.2.1",
-    "sass-loader": "^6.0.6"
+    "jest": "^21.2.1"
   },
   "dependencies": {
-    "lodash.clonedeep": "^4.5.0"
-  },
-  "peerDependencies": {
-    "node-sass": "^4.5.3",
-    "sass-loader": "^6.0.6"
+    "lodash.clonedeep": "^4.5.0",
+    "postcss-browser-reporter": "^0.5.0",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^11.0.0",
+    "postcss-pxtorem": "^4.0.1",
+    "postcss-reporter": "^5.0.0",
+    "postcss-url": "^7.3.0"
   }
 }
