@@ -31,7 +31,7 @@ const addBeforeRule = (rulesSource, ruleMatcher, value) => {
     rules.splice(index, 0, value)
 }
 
-module.exports = function (config, env) {
+module.exports = function (config, env, plugins) {
   // Add CSSnext plugins
   const postcssLoader = findRule(config.module.rules, postcssLoaderMatcher)
   const oldPostcssPlugins = postcssLoader.options.plugins()
@@ -43,12 +43,8 @@ module.exports = function (config, env) {
   }
   const postcssPlugins = [
     require('postcss-import'),
-    require('postcss-url'),
-    require('postcss-cssnext')(autoprefixerOptions),
-    require('postcss-pxtorem')({ propList: ['*', '!border', '!box-shadow'] }),
-    require('postcss-reporter'),
-    require('postcss-browser-reporter')({ disabled: env === 'production' }),
-  ].concat(oldPostcssPlugins)
+    require('postcss-cssnext')(autoprefixerOptions)
+  ].concat(oldPostcssPlugins).concat(plugins)
   const newPluginsFun = function () {
     return postcssPlugins
   }.bind(postcssLoader.options)
