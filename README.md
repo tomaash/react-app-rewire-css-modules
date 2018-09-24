@@ -37,7 +37,7 @@ In your react-app-rewired configuration:
 ```javascript
 /* config-overrides.js */
 
-const rewireCssModules = require('react-app-rewire-css-modules');
+const rewireCssModules = require('react-app-rewire-postcss-cssmodules');
 
 module.exports = function override(config, env) {
     // ...
